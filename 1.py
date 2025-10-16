@@ -1,13 +1,9 @@
 import re
 
-
 pattern = r'ab*'
+txt = input("Enter a string: ")
 
-
-test_strings = ["a", "ab" ]
-
-for string in test_strings:
-    if re.fullmatch(pattern, string):
-        print(f"'{string}'  Match")
-    else:
-        print(f"'{string}'  No match")
+if re.fullmatch(pattern, txt):
+    print("Match")
+else:
+    print("No match")
